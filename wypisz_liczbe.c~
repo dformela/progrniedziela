@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void wczytaj_liczbe(const char *prompt, int *k);
+
+int main() {
+  int a;
+  
+  wczytaj_liczbe("Liczba całkwowita, Sir: ", &a);
+  printf("podałes liczbę całkowitą: %d\n", a);
+  
+  return 0;
+}
+
+void wczytaj_liczbe(const char *prompt, int *k) {
+  puts(prompt);
+  scanf("%d", k);
+}
